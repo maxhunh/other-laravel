@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b95509c4297beedab12caf36b56ed88e",
+    "hash": "99fea9fc6c89d5417e7db2981f4aa16e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1885,6 +1885,49 @@
                 "laravel"
             ],
             "time": "2015-05-07 15:53:57"
+        },
+        {
+            "name": "laralib/l5scaffold",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laralib/l5scaffold.git",
+                "reference": "6b2498577c202482abd7293c9c4961449f77c93e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laralib/l5scaffold/zipball/6b2498577c202482abd7293c9c4961449f77c93e",
+                "reference": "6b2498577c202482abd7293c9c4961449f77c93e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laralib\\L5scaffold\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fernando Brito",
+                    "email": "fernandobritofl@gmail.com"
+                }
+            ],
+            "description": "Extend Laravel 5's generators scaffold.",
+            "keywords": [
+                "generators",
+                "laravel",
+                "laravel5",
+                "scaffold"
+            ],
+            "time": "2015-04-29 01:15:40"
         },
         {
             "name": "mockery/mockery",

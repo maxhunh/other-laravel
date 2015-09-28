@@ -136,6 +136,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        // NOTE: add L5scaffold (scaffold for laravel 5)
+        Laralib\L5scaffold\GeneratorsServiceProvider::class,
 
         /*
          * Application Service Providers...

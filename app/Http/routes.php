@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Routes for Tweets
+Route::get('/','TweetController@index');
+Route::resource('tweets', 'TweetController');
