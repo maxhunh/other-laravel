@@ -3,6 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Events\TweetHandle; // Use event TweetHandle
+
 use App\Tweet;
 use Illuminate\Http\Request;
 
@@ -44,6 +46,7 @@ class TweetController extends Controller {
         $tweet->body = $request->input("body");
 
 		$tweet->save();
+    \Event::fire(new TweetHandle($tweet->id));
 
 		return redirect()->route('tweets.index')->with('message', 'Item created successfully.');
 	}
