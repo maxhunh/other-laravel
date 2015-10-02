@@ -2,7 +2,7 @@
 
 namespace App\Handlers\Events;
 
-use App\Events\TweetHandle;
+use App\Events\TweetHandleCreate;
 use App\Events\TweetHandleUpdate;
 
 use Illuminate\Queue\InteractsWithQueue;
@@ -27,7 +27,7 @@ class Logerror
      * @return void
      */
     # MeNote: handle action create new tweet
-    public function handle_create(TweetHandle $event)
+    public function handle_create(TweetHandleCreate $event)
     {
       # code...
       error_log("App have created ok !");
