@@ -14,7 +14,10 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
       'App\Events\TweetHandle' => [
-        'App\Handlers\Events\Logerror'
+        'App\Handlers\Events\Logerror@handle_create'
+      ],
+      'App\Events\TweetHandleUpdate' => [
+        'App\Handlers\Events\Logerror@handle_update'
       ]
     ];
 
