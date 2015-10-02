@@ -12,9 +12,10 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
+    // MeNote: When run command php artisan event:generate, laravel load this config add auto gen files
     protected $listen = [
-      'App\Events\TweetHandle' => [
-        'App\Handlers\Events\Logerror'
+      'App\Events\UserHasRegistered' => [
+        'App\Handlers\Events\Email'
       ]
     ];
 

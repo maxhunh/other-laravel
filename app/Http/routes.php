@@ -18,3 +18,7 @@
 // Routes for Tweets
 Route::get('/','TweetController@index');
 Route::resource('tweets', 'TweetController');
+
+Route::get('broadcast', function(){
+    event(new UserHasRegistered('Duc Huynh'));
+});
