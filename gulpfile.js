@@ -12,10 +12,11 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+    mix.phpUnit() // menote: run test use elixir
     mix.sass([
                 'app.scss',
                 'bootstrap.min.css'
-            ]);
+            ])
     mix.scripts([
                 'jquery.min.js',
                 'bootstrap.min.js'

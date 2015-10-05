@@ -12,7 +12,7 @@
     <title>Starter Template</title>
 
     <!-- Bootstrap core CSS -->
-    {{-- MeNOTE: try use href="{{ elixir("css/all.css") }}" --}}
+    {{-- menote: try use href="{{ elixir("css/all.css") }}" --}}
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->

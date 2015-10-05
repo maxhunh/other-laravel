@@ -26,7 +26,7 @@ class Logerror
      * @param  TweetHandle  $event
      * @return void
      */
-    # MeNote: handle action create new tweet
+    # menote: handle action create new tweet
     public function handle_create(TweetHandleCreate $event)
     {
       # code...
@@ -35,7 +35,7 @@ class Logerror
       error_log($event->get_id());
     }
 
-    # MeNote: handle action update tweet
+    # menote: handle action update tweet
     public function handle_update(TweetHandleUpdate $event)
     {
       # code...
