@@ -4,6 +4,9 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Tweet;
+
+use App\Jobs\SendReminderEmail;
+
 use Illuminate\Http\Request;
 
 class TweetController extends Controller {
@@ -44,6 +47,7 @@ class TweetController extends Controller {
         $tweet->body = $request->input("body");
 
 		$tweet->save();
+        $this->dispatch(new SendReminderEmail($tweet));
 
 		return redirect()->route('tweets.index')->with('message', 'Item created successfully.');
 	}
